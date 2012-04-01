@@ -1,0 +1,497 @@
+diff --git a/res/values-cs/strings.xml b/res/values-cs/strings.xml
+index ee5239a..3221f9b 100644
+--- a/res/values-cs/strings.xml
++++ b/res/values-cs/strings.xml
+@@ -87,9 +87,9 @@
+   <string name="pref_camera_other_settings_title">Další nastavení</string>
+   <string name="pref_camera_timer_duration">Časová spoušť</string>
+   <string name="pref_camera_timer_duration_summary">Zvolte časovou prodlevu spouště</string>
+-  <string name="pref_camera_search_shutter_title">Spoušť pomocí vyhledávání</string>
+-  <string name="pref_camera_search_shutter">Tlačítko vyhledávání</string>
+-  <string name="pref_camera_search_shutter_summary">Tlačítkem vyhledávání je pořízena fotografie</string>
++  <string name="pref_camera_magic_shutter_title">Spoušť pomocí vyhledávání</string>
++  <string name="pref_camera_magic_shutter">Tlačítko vyhledávání</string>
++  <string name="pref_camera_magic_shutter_summary">Tlačítkem vyhledávání je pořízena fotografie</string>
+   <string name="pref_camera_power_shutter_title">Spoušť pomocí vypínání</string>
+   <string name="pref_camera_power_shutter">Tlačítko vypínání</string>
+   <string name="pref_camera_power_shutter_summary">Tlačítkem vypínání je pořízení fotografie/video.</string>
+diff --git a/res/values-de/strings.xml b/res/values-de/strings.xml
+index 68c15b0..5e474c7 100644
+--- a/res/values-de/strings.xml
++++ b/res/values-de/strings.xml
+@@ -95,10 +95,10 @@
+     <string name="pref_camera_vol_zoom">Lautstärketasten als Zoomsteuerung</string>
+     <string name="pref_camera_vol_zoom_summary">Lauter/Leiser-Tasten als Steuerung für den Kamerazoom verwenden</string>
+ 
+-    <!-- More Settings screen, search button-->
+-    <string name="pref_camera_search_shutter_title">Suche als Auslöser</string>
+-    <string name="pref_camera_search_shutter">Suchen-Taste</string>
+-    <string name="pref_camera_search_shutter_summary">Suchen-Taste zum Aufnehmen eines Bildes drücken</string>
++    <!-- More Settings screen, magic button-->
++    <string name="pref_camera_magic_shutter_title">Suche als Auslöser</string>
++    <string name="pref_camera_magic_shutter">Suchen-Taste</string>
++    <string name="pref_camera_magic_shutter_summary">Suchen-Taste zum Aufnehmen eines Bildes drücken</string>
+ 
+     <!-- More Settings screen, power button -->
+     <string name="pref_camera_power_shutter_title">Ein-Aus als Auslöser</string>
+diff --git a/res/values-el/strings.xml b/res/values-el/strings.xml
+index 4196776..06c65c6 100644
+--- a/res/values-el/strings.xml
++++ b/res/values-el/strings.xml
+@@ -94,9 +94,9 @@
+     <string name="pref_camera_other_settings_title">"Άλλες ρυθμίσεις"</string>
+     <string name="pref_camera_timer_duration">"Διάρκεια Χρονοδιακόπτη"</string>
+     <string name="pref_camera_timer_duration_summary">"Επιλέξτε διάρκεια για το χρονοδιακόπτη της κάμερας"</string>
+-    <string name="pref_camera_search_shutter_title">"Λήψη με Αναζήτηση"</string>
+-    <string name="pref_camera_search_shutter">"Πλήκτρο Αναζήτησης"</string>
+-    <string name="pref_camera_search_shutter_summary">"Λήψη με το πλήκτρο Αναζήτησης"</string>
++    <string name="pref_camera_magic_shutter_title">"Λήψη με Αναζήτηση"</string>
++    <string name="pref_camera_magic_shutter">"Πλήκτρο Αναζήτησης"</string>
++    <string name="pref_camera_magic_shutter_summary">"Λήψη με το πλήκτρο Αναζήτησης"</string>
+     <string name="pref_camera_power_shutter_title">Λήψη με Power</string>
+     <string name="pref_camera_power_shutter">"Πλήκτρο Power"</string>
+     <string name="pref_camera_power_shutter_summary">"Λήψη με πλήκτρο Power"</string>
+diff --git a/res/values-es/strings.xml b/res/values-es/strings.xml
+index d822b6b..523cbf0 100644
+--- a/res/values-es/strings.xml
++++ b/res/values-es/strings.xml
+@@ -108,12 +108,12 @@
+     <string name="pref_camera_timer_duration">Temporizador</string>
+     <string name="pref_camera_timer_duration_summary">Establecer la duración del temporizador</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">Disparador</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">Disparador</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">Botón Búsqueda</string>
+-    <string name="pref_camera_search_shutter_summary">El botón de búsqueda se usará para tomar una foto</string>
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">Botón Búsqueda</string>
++    <string name="pref_camera_magic_shutter_summary">El botón de búsqueda se usará para tomar una foto</string>
+ 
+     <!-- More Settings screen, power button title -->
+     <string name="pref_camera_power_shutter_title">Más disparadores</string>
+diff --git a/res/values-fr/strings.xml b/res/values-fr/strings.xml
+index 5d7cb03..d4622aa 100644
+--- a/res/values-fr/strings.xml
++++ b/res/values-fr/strings.xml
+@@ -227,12 +227,12 @@
+     <string name="pref_camera_vol_down_shutter">Volume Bas</string>
+     <string name="pref_camera_vol_down_shutter_summary">Le bouton Volume Bas prend une photo</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">Déclencheur sur Recherche</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">Déclencheur sur Recherche</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">Bouton Recherche</string>
+-    <string name="pref_camera_search_shutter_summary">Le bouton Recherche prend une photo</string>
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">Bouton Recherche</string>
++    <string name="pref_camera_magic_shutter_summary">Le bouton Recherche prend une photo</string>
+ 
+     <!-- More Settings screen, power button title -->
+     <string name="pref_camera_power_shutter_title">Déclencheur sur Power</string>
+diff --git a/res/values-hu/strings.xml b/res/values-hu/strings.xml
+index 4c73a87..ba22838 100644
+--- a/res/values-hu/strings.xml
++++ b/res/values-hu/strings.xml
+@@ -136,9 +136,9 @@
+     <string name="pref_camera_vol_up_shutter_summary">Kép készítése a hangerő-fel gomb megnyomásakor</string>
+     <string name="pref_camera_vol_down_shutter">Hangerő-le</string>
+     <string name="pref_camera_vol_down_shutter_summary">Kép készítése a hangerő-le gomb megnyomásakor</string>
+-    <string name="pref_camera_search_shutter_title">Keresés gomb - kioldó</string>
+-    <string name="pref_camera_search_shutter">Keresés gomb</string>
+-    <string name="pref_camera_search_shutter_summary">Kép készítése a keresés gomb megnyomásakor</string>
++    <string name="pref_camera_magic_shutter_title">Keresés gomb - kioldó</string>
++    <string name="pref_camera_magic_shutter">Keresés gomb</string>
++    <string name="pref_camera_magic_shutter_summary">Kép készítése a keresés gomb megnyomásakor</string>
+     <string name="pref_camera_power_shutter_title">Bekapcsoló gomb - kioldó</string>
+     <string name="pref_camera_power_shutter">Bekapcsoló gomb</string>
+     <string name="pref_camera_power_shutter_summary">Kép vagy videó készítése a bekapcsoló gomb megnyomásakor</string>
+diff --git a/res/values-it/strings.xml b/res/values-it/strings.xml
+index 69f3c3a..92e38c5 100644
+--- a/res/values-it/strings.xml
++++ b/res/values-it/strings.xml
+@@ -140,12 +140,12 @@
+     <string name="pref_camera_timer_duration">Durata timer</string>
+     <string name="pref_camera_timer_duration_summary">Seleziona la durata per il timer della fotocamera</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">Scatta con tasto cerca</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">Scatta con tasto cerca</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">Tasto cerca</string>
+-    <string name="pref_camera_search_shutter_summary">Utilizza il tasto cerca per scattare le foto</string>
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">Tasto cerca</string>
++    <string name="pref_camera_magic_shutter_summary">Utilizza il tasto cerca per scattare le foto</string>
+ 
+     <!-- More Settings screen, power button title -->
+     <string name="pref_camera_power_shutter_title">Scatta con tasto accensione</string>
+diff --git a/res/values-ja/strings.xml b/res/values-ja/strings.xml
+index 02e5888..454727c 100644
+--- a/res/values-ja/strings.xml
++++ b/res/values-ja/strings.xml
+@@ -207,12 +207,12 @@
+     <string name="pref_camera_vol_zoom">ボリュームキーでズーム</string>
+     <string name="pref_camera_vol_zoom_summary">ボリュームアップ/ダウンキーでそれぞれズームイン/アウトする</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">検索キーシャッター</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">検索キーシャッター</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">検索キー</string>
+-    <string name="pref_camera_search_shutter_summary">検索キーで撮影する</string>
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">検索キー</string>
++    <string name="pref_camera_magic_shutter_summary">検索キーで撮影する</string>
+ 
+     <!-- More Settings screen, power button title -->
+     <string name="pref_camera_power_shutter_title">電源ボタンシャッター</string>
+diff --git a/res/values-nl/strings.xml b/res/values-nl/strings.xml
+index 413818a..38e0df3 100644
+--- a/res/values-nl/strings.xml
++++ b/res/values-nl/strings.xml
+@@ -75,10 +75,10 @@
+     <string name="pref_camera_vol_zoom">Zoomen met volume knoppen</string>
+     <string name="pref_camera_vol_zoom_summary">Gebruik de volume omhoog/omlaag knoppen om in te zoomen en uit te zoomen</string>
+ 
+-    <!-- More Settings screen, search button-->
+-    <string name="pref_camera_search_shutter_title">Foto maken met zoek knop</string>
+-    <string name="pref_camera_search_shutter">Zoek knop</string>
+-    <string name="pref_camera_search_shutter_summary">Druk op de zoek knop om een foto te maken</string>
++    <!-- More Settings screen, magic button-->
++    <string name="pref_camera_magic_shutter_title">Foto maken met zoek knop</string>
++    <string name="pref_camera_magic_shutter">Zoek knop</string>
++    <string name="pref_camera_magic_shutter_summary">Druk op de zoek knop om een foto te maken</string>
+ 
+     <!-- Settings screen, custom focus -->
+     <string name="pref_camera_settings_focus_title">Focus</string>
+diff --git a/res/values-pt/strings.xml b/res/values-pt/strings.xml
+index f0786ae..8f9f4ea 100644
+--- a/res/values-pt/strings.xml
++++ b/res/values-pt/strings.xml
+@@ -182,9 +182,9 @@
+     <string name="pref_camera_vol_zoom_title">Zoom c/ Volume</string>
+     <string name="pref_camera_vol_zoom">Botões de volume dão zoom</string>
+     <string name="pref_camera_vol_zoom_summary">Volume cima/baixo dão zoom mais/menos respectivamente</string>
+-    <string name="pref_camera_search_shutter_title">Pesquisa</string>
+-    <string name="pref_camera_search_shutter">Botão de Pesquisa</string>
+-    <string name="pref_camera_search_shutter_summary">Botão de pesquisa tira foto</string>
++    <string name="pref_camera_magic_shutter_title">Pesquisa</string>
++    <string name="pref_camera_magic_shutter">Botão de Pesquisa</string>
++    <string name="pref_camera_magic_shutter_summary">Botão de pesquisa tira foto</string>
+     <string name="pref_camera_settings_focus_title">Foco</string>
+     <string name="pref_camera_settings_focus">Pré-Foco</string>
+     <string name="pref_camera_settings_focus_summary">Foca antes de tirar foto</string>
+diff --git a/res/values-ru/strings.xml b/res/values-ru/strings.xml
+index 6183340..98c89ba 100644
+--- a/res/values-ru/strings.xml
++++ b/res/values-ru/strings.xml
+@@ -258,12 +258,12 @@
+     <string name="pref_camera_timer_duration">Длительность таймера</string>
+     <string name="pref_camera_timer_duration_summary">Выберите продолжительность для таймера камеры</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">Съёмка кнопкой поиск</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">Съёмка кнопкой поиск</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">Кнопка поиск</string>  
+-    <string name="pref_camera_search_shutter_summary">Кнопка поиск делает снимок</string>  
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">Кнопка поиск</string>  
++    <string name="pref_camera_magic_shutter_summary">Кнопка поиск делает снимок</string>  
+ 
+     <!-- Settings screen, custom focus title -->
+     <string name="pref_camera_settings_focus_title">Фокус</string>
+diff --git a/res/values-sv/strings.xml b/res/values-sv/strings.xml
+index 2b1aaf5..2a5615b 100644
+--- a/res/values-sv/strings.xml
++++ b/res/values-sv/strings.xml
+@@ -96,9 +96,9 @@
+     <string name="pref_camera_other_settings_title">Övriga inställningar</string>
+     <string name="pref_camera_timer_duration">Tid för självutlösare</string>
+     <string name="pref_camera_timer_duration_summary">Välj fördröjning för självutlösaren</string>
+-    <string name="pref_camera_search_shutter_title">Sök-slutare</string>
+-    <string name="pref_camera_search_shutter">Sök-knapp</string>
+-    <string name="pref_camera_search_shutter_summary">Sök-knappen tar en bild</string>
++    <string name="pref_camera_magic_shutter_title">Sök-slutare</string>
++    <string name="pref_camera_magic_shutter">Sök-knapp</string>
++    <string name="pref_camera_magic_shutter_summary">Sök-knappen tar en bild</string>
+     <string name="pref_camera_power_shutter_title">Ström-slutare</string>
+     <string name="pref_camera_power_shutter">Strömknapp</string>
+     <string name="pref_camera_power_shutter_summary">Strömknappen tar en bild/video</string>
+diff --git a/res/values-uk/strings.xml b/res/values-uk/strings.xml
+index ad0bfb9..c9f1d1e 100644
+--- a/res/values-uk/strings.xml
++++ b/res/values-uk/strings.xml
+@@ -76,9 +76,9 @@
+     <string name="pref_camera_vol_zoom_title">Змінення масштабу кнопками гучності</string>
+     <string name="pref_camera_vol_zoom">Масштабування кн. гучності</string>
+     <string name="pref_camera_vol_zoom_summary">Натискання кнопок “Голосніше” чи “Тихіше” відповідно збільшуватиме або зменшуватиме масштаб</string>
+-    <string name="pref_camera_search_shutter_title">Керування зачином кнопкою “Пошук”</string>
+-    <string name="pref_camera_search_shutter">Кн. “Пошук”</string>
+-    <string name="pref_camera_search_shutter_summary">За натисканням кнопки “Пошук” буде зроблений знімок</string>
++    <string name="pref_camera_magic_shutter_title">Керування зачином кнопкою “Пошук”</string>
++    <string name="pref_camera_magic_shutter">Кн. “Пошук”</string>
++    <string name="pref_camera_magic_shutter_summary">За натисканням кнопки “Пошук” буде зроблений знімок</string>
+     <string name="pref_camera_power_shutter_title">Керування зачином кнопкою живлення</string>
+     <string name="pref_camera_power_shutter">Кнопка живлення</string>
+     <string name="pref_camera_power_shutter_summary">За натисканням кнопки живлення буде зроблений знімок (розпочнеться зйомка відео)</string>
+diff --git a/res/values-zh-rCN/strings.xml b/res/values-zh-rCN/strings.xml
+index f66b8aa..2bacf3e 100644
+--- a/res/values-zh-rCN/strings.xml
++++ b/res/values-zh-rCN/strings.xml
+@@ -94,12 +94,12 @@
+     <string name="pref_camera_vol_zoom">音量按键变焦</string>
+     <string name="pref_camera_vol_zoom_summary">增大/减小音量对应对焦放大/缩小</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">搜索快门</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">魔键快门</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">搜索键</string>
+-    <string name="pref_camera_search_shutter_summary">按搜索键拍照</string>
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">魔键</string>
++    <string name="pref_camera_magic_shutter_summary">魔键拍照</string>
+ 
+     <!-- Settings screen, custom focus title -->
+     <string name="pref_camera_settings_focus_title">对焦</string>
+diff --git a/res/values-zh-rTW/strings.xml b/res/values-zh-rTW/strings.xml
+index 00ca064..d0170ab 100644
+--- a/res/values-zh-rTW/strings.xml
++++ b/res/values-zh-rTW/strings.xml
+@@ -213,12 +213,12 @@
+     <string name="pref_camera_timer_duration">拍攝計時長度</string>
+     <string name="pref_camera_timer_duration_summary">選擇計時拍攝的倒數時間長度</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">搜尋鍵快門</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">魔鍵快門</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">搜尋鍵</string>
+-    <string name="pref_camera_search_shutter_summary">按搜尋鍵拍攝照片／影片</string>
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">魔鍵</string>
++    <string name="pref_camera_magic_shutter_summary">按魔鍵拍攝照片／影片</string>
+ 
+     <!-- More Settings screen, power button title -->
+     <string name="pref_camera_power_shutter_title">電源鍵快門</string>
+diff --git a/res/values/strings.xml b/res/values/strings.xml
+index 96833b8..012669b 100644
+--- a/res/values/strings.xml
++++ b/res/values/strings.xml
+@@ -212,12 +212,12 @@
+     <string name="pref_camera_timer_duration">Timer duration</string>
+     <string name="pref_camera_timer_duration_summary">Select duration for camera timer</string>
+ 
+-    <!-- More Settings screen, search button title -->
+-    <string name="pref_camera_search_shutter_title">Search Shutter</string>
++    <!-- More Settings screen, magic button title -->
++    <string name="pref_camera_magic_shutter_title">Magic Shutter</string>
+ 
+-    <!-- More Settings screen, search button -->
+-    <string name="pref_camera_search_shutter">Search Button</string>  
+-    <string name="pref_camera_search_shutter_summary">Search button takes a picture</string>  
++    <!-- More Settings screen, magic button -->
++    <string name="pref_camera_magic_shutter">Magic Button</string>  
++    <string name="pref_camera_magic_shutter_summary">Magic button takes a picture</string>  
+ 
+     <!-- More Settings screen, power button title -->
+     <string name="pref_camera_power_shutter_title">Power Shutter</string>
+diff --git a/res/xml/camera_advanced_settings.xml b/res/xml/camera_advanced_settings.xml
+index 2d759bd..666c526 100644
+--- a/res/xml/camera_advanced_settings.xml
++++ b/res/xml/camera_advanced_settings.xml
+@@ -31,12 +31,12 @@
+                     android:persistent="true" />
+ 
+     <PreferenceCategory
+-            android:title="@string/pref_camera_search_shutter_title"
++            android:title="@string/pref_camera_magic_shutter_title"
+             />
+             <CheckBoxPreference
+-                    android:key="search_shutter_enabled"
+-                    android:title="@string/pref_camera_search_shutter"
+-                    android:summary="@string/pref_camera_search_shutter_summary"
++                    android:key="magic_shutter_enabled"
++                    android:title="@string/pref_camera_magic_shutter"
++                    android:summary="@string/pref_camera_magic_shutter_summary"
+                     android:persistent="true" />
+ 
+     <PreferenceCategory
+diff --git a/src/com/android/camera/AdvancedSettings.java b/src/com/android/camera/AdvancedSettings.java
+index 072084a..e241104 100644
+--- a/src/com/android/camera/AdvancedSettings.java
++++ b/src/com/android/camera/AdvancedSettings.java
+@@ -28,14 +28,14 @@ public class AdvancedSettings extends PreferenceActivity implements Preference.O
+ 
+     private static final String KEY_VOL_UP_SHUTTER = "vol_up_shutter_enabled";
+     private static final String KEY_VOL_DOWN_SHUTTER = "vol_down_shutter_enabled";
+-    private static final String KEY_SEARCH_SHUTTER = "search_shutter_enabled";
++    private static final String KEY_MAGIC_SHUTTER = "magic_shutter_enabled";
+     private static final String KEY_VOL_ZOOM = "vol_zoom_enabled";
+     private static final String KEY_LONG_FOCUS = "long_focus_enabled";
+     private static final String KEY_PRE_FOCUS = "pre_focus_enabled";
+ 
+     CheckBoxPreference volUpShutter = null;
+     CheckBoxPreference volDownShutter = null;
+-    CheckBoxPreference searchShutter = null;
++    CheckBoxPreference magicShutter = null;
+     CheckBoxPreference volZoom = null;
+     CheckBoxPreference longFocus = null;
+     CheckBoxPreference preFocus = null;
+@@ -48,7 +48,7 @@ public class AdvancedSettings extends PreferenceActivity implements Preference.O
+         
+         volUpShutter = (CheckBoxPreference) preferenceScreen.findPreference(KEY_VOL_UP_SHUTTER);
+         volDownShutter = (CheckBoxPreference) preferenceScreen.findPreference(KEY_VOL_DOWN_SHUTTER);
+-        searchShutter = (CheckBoxPreference) preferenceScreen.findPreference(KEY_SEARCH_SHUTTER);
++        magicShutter = (CheckBoxPreference) preferenceScreen.findPreference(KEY_MAGIC_SHUTTER);
+         volZoom = (CheckBoxPreference) preferenceScreen.findPreference(KEY_VOL_ZOOM);
+         longFocus = (CheckBoxPreference) preferenceScreen.findPreference(KEY_LONG_FOCUS);
+         preFocus = (CheckBoxPreference) preferenceScreen.findPreference(KEY_PRE_FOCUS);
+@@ -62,14 +62,14 @@ public class AdvancedSettings extends PreferenceActivity implements Preference.O
+         if (enable) {
+             volUpShutter.setOnPreferenceChangeListener(this);
+             volDownShutter.setOnPreferenceChangeListener(this);
+-            searchShutter.setOnPreferenceChangeListener(this);
++            magicShutter.setOnPreferenceChangeListener(this);
+             volZoom.setOnPreferenceChangeListener(this);
+             longFocus.setOnPreferenceChangeListener(this);
+             preFocus.setOnPreferenceChangeListener(this);
+         } else {
+             volUpShutter.setOnPreferenceChangeListener(null);
+             volDownShutter.setOnPreferenceChangeListener(null);
+-            searchShutter.setOnPreferenceChangeListener(null);
++            magicShutter.setOnPreferenceChangeListener(null);
+             volZoom.setOnPreferenceChangeListener(null);
+             longFocus.setOnPreferenceChangeListener(null);
+             preFocus.setOnPreferenceChangeListener(null);
+diff --git a/src/com/android/camera/BaseCamera.java b/src/com/android/camera/BaseCamera.java
+index 8124e40..58ff5f0 100644
+--- a/src/com/android/camera/BaseCamera.java
++++ b/src/com/android/camera/BaseCamera.java
+@@ -32,7 +32,7 @@ import android.view.WindowManager;
+ 
+ import java.util.List;
+ 
+-public abstract class BaseCamera extends NoSearchActivity
++public abstract class BaseCamera extends NoMagicActivity
+         implements PreviewFrameLayout.OnSizeChangedListener {
+ 
+     private static final String LOG_TAG = "BaseCamera";
+diff --git a/src/com/android/camera/Camera.java b/src/com/android/camera/Camera.java
+index ee30df1..5ea4bf9 100644
+--- a/src/com/android/camera/Camera.java
++++ b/src/com/android/camera/Camera.java
+@@ -1538,7 +1538,7 @@ public class Camera extends BaseCamera implements View.OnClickListener,
+ 
+     @Override
+     public boolean onKeyDown(int keyCode, KeyEvent event) {
+-        boolean searchShutter = prefs.getBoolean("search_shutter_enabled", false);
++        boolean magicShutter = prefs.getBoolean("magic_shutter_enabled", false);
+         boolean volUpShutter = prefs.getBoolean("vol_up_shutter_enabled", false);
+         boolean volDownShutter = prefs.getBoolean("vol_down_shutter_enabled", false);
+         boolean volZoom = prefs.getBoolean("vol_zoom_enabled", false);
+@@ -1554,8 +1554,8 @@ public class Camera extends BaseCamera implements View.OnClickListener,
+                     doSnap();
+                 }
+                 return true;
+-            case KeyEvent.KEYCODE_SEARCH:
+-                if (searchShutter) {
++            case KeyEvent.KEYCODE_MAGIC_VIEW:
++                if (magicShutter) {
+                     doShutter(prefs, event);
+                 }
+                 return true;
+diff --git a/src/com/android/camera/NoMagicActivity.java b/src/com/android/camera/NoMagicActivity.java
+new file mode 100644
+index 0000000..d1d98e5
+--- /dev/null
++++ b/src/com/android/camera/NoMagicActivity.java
+@@ -0,0 +1,32 @@
++/*
++ * Copyright (C) 2009 The Android Open Source Project
++ *
++ * Licensed under the Apache License, Version 2.0 (the "License");
++ * you may not use this file except in compliance with the License.
++ * You may obtain a copy of the License at
++ *
++ *      http://www.apache.org/licenses/LICENSE-2.0
++ *
++ * Unless required by applicable law or agreed to in writing, software
++ * distributed under the License is distributed on an "AS IS" BASIS,
++ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++ * See the License for the specific language governing permissions and
++ * limitations under the License.
++ */
++
++package com.android.camera;
++
++import android.app.Activity;
++
++/**
++ * An activity which disables the search key function.
++ *
++ * <p> To use it, just inherit from {@code NoSearchActivity} instead of
++ * {@code Activity}.
++ */
++public class NoMagicActivity extends Activity {
++    @Override
++    public boolean onSearchRequested() {
++        return false;
++    }
++}
+diff --git a/src/com/android/camera/NoSearchActivity.java b/src/com/android/camera/NoSearchActivity.java
+deleted file mode 100644
+index 6e8657a..0000000
+--- a/src/com/android/camera/NoSearchActivity.java
++++ /dev/null
+@@ -1,32 +0,0 @@
+-/*
+- * Copyright (C) 2009 The Android Open Source Project
+- *
+- * Licensed under the Apache License, Version 2.0 (the "License");
+- * you may not use this file except in compliance with the License.
+- * You may obtain a copy of the License at
+- *
+- *      http://www.apache.org/licenses/LICENSE-2.0
+- *
+- * Unless required by applicable law or agreed to in writing, software
+- * distributed under the License is distributed on an "AS IS" BASIS,
+- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+- * See the License for the specific language governing permissions and
+- * limitations under the License.
+- */
+-
+-package com.android.camera;
+-
+-import android.app.Activity;
+-
+-/**
+- * An activity which disables the search key function.
+- *
+- * <p> To use it, just inherit from {@code NoSearchActivity} instead of
+- * {@code Activity}.
+- */
+-public class NoSearchActivity extends Activity {
+-    @Override
+-    public boolean onSearchRequested() {
+-        return false;
+-    }
+-}
